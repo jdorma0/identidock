@@ -4,6 +4,7 @@ proxy:
     - identidock
   ports:
     - "80:80"
+  environment:
     - NGINX_HOST=ec2-54-85-176-243.compute-1.amazonaws.com
     - NGINX_PROXY=http://identidock:9090
 identidock:
